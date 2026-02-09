@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WhatsApp
+Comment=WhatsApp Linux Desktop Wrapper
+Exec=whatsapp-wrapper %U
+Terminal=false
+Type=Application
+Icon=whatsapp-wrapper
+Categories=Network;InstantMessaging;Chat;
+StartupWMClass=whatsapp-wrapper
