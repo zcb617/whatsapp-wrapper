@@ -1,0 +1,41 @@
+{
+  "name": "whatsapp-wrapper",
+  "version": "1.0.0",
+  "description": "WhatsApp Linux Desktop Wrapper",
+  "homepage": "https://github.com/codefarmer/whatsapp-wrapper",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "start:dev": "electron . --no-sandbox --inspect=5858",
+    "build": "electron-builder",
+    "build:linux": "electron-builder --linux"
+  },
+  "keywords": ["whatsapp", "electron", "linux"],
+  "author": "codefarmer",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^24.13.0"
+  },
+  "dependencies": {
+    "app-indicator": "^1.0.0"
+  },
+  "build": {
+    "appId": "com.codefarmer.whatsapp-wrapper",
+    "productName": "WhatsApp",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "icon": "icon.png",
+      "target": ["deb"],
+      "category": "Chat",
+      "executableName": "whatsapp-wrapper",
+      "maintainer": "codefarmer <codefarmer@example.com>"
+    },
+    "files": [
+      "**/*",
+      "!dist/**"
+    ]
+  }
+}
